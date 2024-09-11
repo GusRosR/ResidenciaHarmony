@@ -5,18 +5,18 @@ En este vault se llevará el control de todo el proceso de la realización de la
 
 A continuación se mencionan las X secciones principales que contendrá el proyecto en el orden en el que se deben de realizar o bien, en el caso de que ya se esté avanzado, los apartados en los que se puede encontrar información valiosa como conceptos y demás de cada sección.
 
-1. [Acerca de HMS](./HMS/Acerca%20%de%20%HMS.md)
+1. [Acerca de HMS](./HMS/Acerca%20de%20HMS.md)
 	- [Introducción a HMS](./HMS/Fundamentos%20&%20Teoría/Introducción%20a%20HMS.md)
 	- [Introducción a HMS Core](./HMS/Fundamentos%20&%20Teoría/Introducción%20a%20HMS%20Core.md)
 	- [Subir aplicaciones](./HMS/Fundamentos%20&%20Teoría/Subir%20aplicaciones.md)
 	- [Requisitos de la Interfaz de Usuario (UI)](./HMS/Fundamentos%20&%20Teoría/Requisitos%20de%20la%20Interfaz%20de%20Usuario%20(UI).md)
 	- [Kit de Herramientas de Android Studio Parte 1](./HMS/Fundamentos%20&%20Teoría/Kit%20de%20Herramientas%20de%20Android%20Studio%20Parte%201.md)
 	- [Kit de Herramientas de Android Studio Parte 2](./HMS/Fundamentos%20&%20Teoría/Kit%20de%20Herramientas%20de%20Android%20Studio%20Parte%202.md)
-2.  [Acerca de Harmony OS](./Harmony%20%OS/Acerca%20%de%20%Harmony%20%OS.md)
-	- [Introducción a Harmony OS](./Harmony%20%OS/Introducción%20%a%20%Harmony%20%OS.md)
-	- [Arquitectura de Harmony OS](./Harmony%20%OS/Arquitectura%20%de%20%Harmony%20%OS.md)
-	- [Descargar DevEco Studio IDE](./Harmony%20%OS/Descargar%20%DevEco%20%Studio%20%IDE.md)
-	- [Fundamentos de las aplicaciones](./Harmony%20%OS/Fundamentos%20%de%20%las%20%aplicaciones.md)
+2.  [Acerca de Harmony OS](./Harmony%20OS/Acerca%20de%20Harmony%20OS.md)
+	- [Introducción a Harmony OS](./Harmony%20OS/Introducción%20a%20Harmony%20OS.md)
+	- [Arquitectura de Harmony OS](./Harmony%20OS/Arquitectura%20de%20Harmony%20OS.md)
+	- [Descargar DevEco Studio IDE](./Harmony%20OS/Descargar%20DevEco%20Studio%20IDE.md)
+	- [Fundamentos de las aplicaciones](./Harmony%20OS/Fundamentos%20de%20las%20aplicaciones.md)
 3. Conceptos & Definiciones
 	- [API]
 	- [DFX]
