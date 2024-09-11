@@ -52,4 +52,4 @@ De igual manera, se nos provee una herramienta de Inteligencia Artificial (IA) q
 
 
 [Volver al inicio](../Acerca%20De%20HMS.md)
-[Parte 2](./HMS/Fundamentos%20&%20Teoría/Kit%20de%20Herramientas%20de%20Android%20Studio%20Parte%202.md)
+[Parte 2](./Kit%20de%20Herramientas%20de%20Android%20Studio%20Parte%202.md)
