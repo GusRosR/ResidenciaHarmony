@@ -13,3 +13,4 @@ En el caso de los botones, HuaweiIdAuthButton es un botón o control que se prop
 
 
 [Volver al índice](../Acerca%20De%20HMS.md)
+[Volver al inicio](../../Bitácora%20de%20Proyecto.md)
