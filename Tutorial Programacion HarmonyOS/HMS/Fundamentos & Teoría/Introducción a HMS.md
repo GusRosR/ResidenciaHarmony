@@ -44,7 +44,7 @@ Como primer paso, es necesario instalar App Gallery y HMS Core. Usualmente, en d
 2. Una vez instalado App Gallery, dentro de ella, buscar HMS Core e instalarlo.
 
 
-[Volver al inicio](./HMS/Acerca%20de%20HMS.md)
+[Volver al inicio](../Acerca%20de%20HMS.md)
 
 
 
