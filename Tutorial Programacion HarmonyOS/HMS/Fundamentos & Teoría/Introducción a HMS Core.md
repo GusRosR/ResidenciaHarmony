@@ -43,4 +43,4 @@ El HMS Core proporciona una amplia gama de herramientas para desarrollar en el e
 Estos son sólo algunos ejemplos de las herramientas  que se proporcionan en el HMS Core para crear aplicaciones de manera eficiente y con un amplio soporte tecnológico.
 
 [Volver al índice](../Acerca%20De%20HMS.md)
-[Volver al inicio](../../../Bitácora%20de%20Proyecto.md)
+[Volver al inicio](../../Bitácora%20de%20Proyecto.md)
