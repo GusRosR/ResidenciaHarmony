@@ -5,7 +5,7 @@ En este vault se llevará el control de todo el proceso de la realización de la
 
 A continuación se mencionan las X secciones principales que contendrá el proyecto en el orden en el que se deben de realizar o bien, en el caso de que ya se esté avanzado, los apartados en los que se puede encontrar información valiosa como conceptos y demás de cada sección.
 
-1. [Acerca de HMS](./HMS/Acerca%20de%20HMS.md)
+1. [Acerca de HMS](./HMS/Acerca%20De%20HMS.md)
 	- [Introducción a HMS](./HMS/Fundamentos%20&%20Teoría/Introducción%20a%20HMS.md)
 	- [Introducción a HMS Core](./HMS/Fundamentos%20&%20Teoría/Introducción%20a%20HMS%20Core.md)
 	- [Subir aplicaciones](./HMS/Fundamentos%20&%20Teoría/Subir%20aplicaciones.md)
