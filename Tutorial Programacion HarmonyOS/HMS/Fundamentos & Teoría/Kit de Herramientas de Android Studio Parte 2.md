@@ -5,3 +5,4 @@ El proceso para utilizar el plugin está en [este enlace](https://developer.huaw
 
 [Parte 1](./Kit%20de%20Herramientas%20de%20Android%20Studio%20Parte%201.md)
 [Volver al índice](../Acerca%20De%20HMS.md)
+[Volver al inicio](../../Bitácora%20de%20Proyecto.md)
