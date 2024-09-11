@@ -3,4 +3,4 @@ Para utilizar el kit de herramientas es necesario instalar el plugin desde la ti
 
 El proceso para utilizar el plugin está en [este enlace](https://developer.huawei.com/consumer/en/training/course/video/C101675066353044075?currentVideoId=101675043860495344) 
 
-[Volver al inicio](Bitácora de Proyecto)
+[Volver al inicio](../Acerca%20De%20HMS.md)
