@@ -46,5 +46,5 @@ Desde el punto de vista de un desarrollador de dispositivos, este sistema operat
 - DevEco Studio tiene depuración y ejecución de código en múltiples lenguajes de programación.
 
 
-[Volver al Índice](<Acerca de Harmony OS>)
-[Volver al inicio](<Bitácora de Proyecto>)
+[Volver al Índice](../Acerca%20de%20Harmony%20OS.md)
+[Volver al inicio](../../Bitácora%20de%20Proyecto.md)
