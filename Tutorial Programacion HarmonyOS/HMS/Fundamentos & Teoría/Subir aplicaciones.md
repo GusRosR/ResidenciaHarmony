@@ -14,3 +14,4 @@ A continuación, se describen los pasos más importantes para realizar el proces
 
 
 [Volver al índice](../Acerca%20De%20HMS.md)
+[Volver al inicio](../../Bitácora%20de%20Proyecto.md)
