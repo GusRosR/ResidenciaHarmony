@@ -45,6 +45,6 @@ Como primer paso, es necesario instalar App Gallery y HMS Core. Usualmente, en d
 
 
 [Volver al índice](../Acerca%20De%20HMS.md)
-
+[Volver al inicio](../../Bitácora%20de%20Proyecto.md)
 
 
