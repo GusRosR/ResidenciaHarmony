@@ -51,5 +51,5 @@ De igual manera, se nos provee una herramienta de Inteligencia Artificial (IA) q
 - Integración de Modelo: Esta función permite integrar funciones como conversión del modelo, detección del entorno, inclusión de dependencias, análisis del modelo de IA, entre otros.
 
 
-[Volver al inicio](../Acerca%20De%20HMS.md)
+[Volver al índice](../Acerca%20De%20HMS.md)
 [Parte 2](./Kit%20de%20Herramientas%20de%20Android%20Studio%20Parte%202.md)
