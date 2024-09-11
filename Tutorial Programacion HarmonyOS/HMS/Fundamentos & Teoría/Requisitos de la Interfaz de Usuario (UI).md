@@ -12,4 +12,4 @@ En el caso de los botones, HuaweiIdAuthButton es un botón o control que se prop
 - Si los botones de inicio son monocromáticos se puede utilizar el blanco o el estilo negro
 
 
-[Volver al inicio](Bitácora de Proyecto)
+[Volver al inicio](../Acerca%20De%20HMS.md)
