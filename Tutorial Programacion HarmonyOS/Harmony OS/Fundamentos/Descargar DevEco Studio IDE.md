@@ -114,5 +114,5 @@ El puerto 5555 en el dispositivo viene desactivado por defecto. Para activarlo e
 
 Una vez hecho este procedimiento, en la barra superior de DevEco seleccionar **Tools**, luego **IP Connection**, posteriormente se ingresa la dirección IP del dispositivo que servirá para testear la aplicación. Le damos clic el botón de ejecutar y una vez que la conexión se realice, el estatus del dispositivo en la computadora cambiará a En Línea. Para ejecutar el programa, basta con seguir los mismos pasos que con el método de conexión por USB.
 
-[Volver al Índice](<Acerca de Harmony OS>)
-[Volver al inicio](<Bitácora de Proyecto>)
+[Volver al Índice](../Acerca%20de%20Harmony%20OS.md)
+[Volver al inicio](../../Bitácora%20de%20Proyecto.md)
