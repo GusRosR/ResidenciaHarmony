@@ -1,4 +1,3 @@
-Jar
 Es importante comprender la arquitectura del sistema operativo ya que esto permitirá desarrollar aplicaciones de manera más completa y dará pistas de la ubicación de posibles errores que se encuentren en el futuro en el proceso de desarrollo.
 
 La arquitectura de Harmony OS se basa en capas, las cuales se mencionan a continuación en orden ascendente:
