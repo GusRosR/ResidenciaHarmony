@@ -16,29 +16,6 @@
 
 Como primer paso es necesario crear un objeto AccountAuthParams y se le pasan los parámetros que utilizará. De la siguiente manera:
 
-nombreDeVariable = new AccountAuthParamsHelper(AccountAuthParams.x)
+nombreDeVariable = new AccountAuthParamsHelper(AccountAuthParams.x
 
-
-
-[Volver al inicio](Bitácora de Proyecto)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Volver al inicio](Bitácora de Proyecto)
+[Volver al índice](../Acerca%20De%20HMS.md)
