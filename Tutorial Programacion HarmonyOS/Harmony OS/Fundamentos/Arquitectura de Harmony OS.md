@@ -9,7 +9,7 @@ La arquitectura de Harmony OS se basa en capas, las cuales se mencionan a contin
 
 A continuación se muestra una imagen que ilustra de manera detallada dicha arquitectura.
 
-![Foto Arquitectura](./Imagenes/ArquitecturaHarmonyOS.png)
+![Foto Arquitectura](../../Imagenes/ArquitecturaHarmonyOS.png)
 
 
 Las funciones del sistema se encuentran representadas por niveles, de sistema a sub-sistema y a su vez, de función a módulo. Esto proporciona una ventaja en el proceso de despliegue ya que las funciones, módulos o elementos del sub-sistema que no se requieran pueden ser extraídos dependiendo de las necesidades de cada dispositivo.
