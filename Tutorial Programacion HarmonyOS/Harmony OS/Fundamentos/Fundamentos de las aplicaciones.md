@@ -94,3 +94,8 @@ La aplicación que se desarrolla tiene la capacidad de personalizar los permisos
 - Aplicar los permisos de manera dinámica de la siguiente manera:
   
 	  if(verifySelfPermission(""))
+
+
+
+[Volver al Índice](../Acerca%20de%20Harmony%20OS.md)
+[Volver al inicio](../../Bitácora%20de%20Proyecto.md)
