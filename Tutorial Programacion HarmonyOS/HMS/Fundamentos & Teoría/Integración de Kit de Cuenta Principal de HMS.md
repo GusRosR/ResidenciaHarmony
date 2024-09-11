@@ -74,6 +74,7 @@ Los requisitos técnicos para utilizar este kit son los siguientes:
 4. Activar Account Kit
 5. Descargar agconnect-services.json
 
-[Volver al inicio](Bitácora de Proyecto)
+[Volver al índice](../Acerca%20De%20HMS.md)
+
 
 
