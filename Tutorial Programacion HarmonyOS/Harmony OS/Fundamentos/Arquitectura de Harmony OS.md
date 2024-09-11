@@ -79,5 +79,5 @@ Una aplicación puede tener una o más FAs o PAs, la diferencia entre ambas unid
 
 Ahora bien, una aplicación se programa para que contenga las funcionalidades necesarias para funcionar en un celular, ahora bien, si la aplicación se descarga en otro dispositivo, las funciones que se descargarán y cargarán únicamente serán las que los componentes del dispositivo permitan utilizar, lo cual agiliza el proceso tanto de desarrollo como de consumo para el usuario. 
 
-[Volver al Índice](<Acerca de Harmony OS>)
-[Volver al inicio](<Bitácora de Proyecto>)
+[Volver al Índice](../Acerca%20de%20Harmony%20OS.md)
+[Volver al inicio](../../Bitácora%20de%20Proyecto.md)
