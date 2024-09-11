@@ -13,10 +13,10 @@ A continuación se mencionan las X secciones principales que contendrá el proye
 	- [Kit de Herramientas de Android Studio Parte 1](./HMS/Fundamentos%20&%20Teoría/Kit%20de%20Herramientas%20de%20Android%20Studio%20Parte%201.md)
 	- [Kit de Herramientas de Android Studio Parte 2](./HMS/Fundamentos%20&%20Teoría/Kit%20de%20Herramientas%20de%20Android%20Studio%20Parte%202.md)
 2.  [Acerca de Harmony OS](./Harmony%20%OS/Acerca%20%de%20%Harmony%20%OS.md)
-	- [Introducción a Harmony OS](./Harmony%20OS/Introducción%20a%20Harmony%20OS.md)
-	- [Arquitectura de Harmony OS](./Harmony%20OS/Arquitectura%20de%20Harmony%20OS.md)
-	- [Descargar DevEco Studio IDE](./Harmony%20OS/Descargar%20DevEco%20Studio%20IDE.md)
-	- [Fundamentos de las aplicaciones](./Harmony%20OS/Fundamentos%20de%20las%20aplicaciones.md)
+	- [Introducción a Harmony OS](./Harmony%20%OS/Introducción%20%a%20%Harmony%20%OS.md)
+	- [Arquitectura de Harmony OS](./Harmony%20%OS/Arquitectura%20%de%20%Harmony%20%OS.md)
+	- [Descargar DevEco Studio IDE](./Harmony%20%OS/Descargar%20%DevEco%20%Studio%20%IDE.md)
+	- [Fundamentos de las aplicaciones](./Harmony%20%OS/Fundamentos%20%de%20%las%20%aplicaciones.md)
 3. Conceptos & Definiciones
 	- [API]
 	- [DFX]
