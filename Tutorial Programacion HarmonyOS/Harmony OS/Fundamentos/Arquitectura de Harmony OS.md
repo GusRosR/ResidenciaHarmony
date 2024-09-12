@@ -28,7 +28,7 @@ Esta capa del sistema provee todas las capacidades necesarias para que Harmony O
 
 - Set de sub-sistema de capacidades básicas del sistema
 	- [Programador o Planificador Distribuido](../../Conceptos%20&%20Definiciones/Programador%20o%20Planificador%20Distribuido.md)
-	- [Gestor de datos distribuido](../../Conceptos%20&%20Definiciones/Gestor%20de%datos%20distribuido.md)
+	- [Gestor de datos distribuido](../../Conceptos%20&%20Definiciones/Gestor%20de%20datos%20distribuido.md)
 	- [Soft Bus Inteligente](../../Conceptos%20&%20Definiciones/Soft%20Bus%20Inteligente.md)
 	- [Intérprete Ark multi lenguaje](../../Conceptos%20&%20Definiciones/Intérprete%20Ark%20multi%20lenguaje.md)
 	- [Entrada Multimodal](../../Conceptos%20&%20Definiciones/Entrada%20Multimodal.md)
