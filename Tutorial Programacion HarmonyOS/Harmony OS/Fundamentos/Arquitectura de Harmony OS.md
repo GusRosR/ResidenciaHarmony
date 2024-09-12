@@ -2,9 +2,9 @@ Es importante comprender la arquitectura del sistema operativo ya que esto permi
 
 La arquitectura de Harmony OS se basa en capas, las cuales se mencionan a continuación en orden ascendente:
 
-1. Capa del [[Kernel]]
+1. Capa del [Kernel](../../Conceptos%20&Definiciones/Kernel.md)
 2. Capa del servicio del sistema
-3. Capa de [[Framework]]
+3. Capa de [Framework](../../Conceptos%20&%20Definiciones/Framework.md)
 4. Capa de aplicación
 
 A continuación se muestra una imagen que ilustra de manera detallada dicha arquitectura.
@@ -14,11 +14,11 @@ A continuación se muestra una imagen que ilustra de manera detallada dicha arqu
 
 Las funciones del sistema se encuentran representadas por niveles, de sistema a sub-sistema y a su vez, de función a módulo. Esto proporciona una ventaja en el proceso de despliegue ya que las funciones, módulos o elementos del sub-sistema que no se requieran pueden ser extraídos dependiendo de las necesidades de cada dispositivo.
 
-## Capa o sub-sistema de [[Kernel]]
+## Capa o sub-sistema de Kernel
 
 En esta capa, Harmony OS utiliza un diseño multi-kernel, esto se debe a que dependiendo del sistema que utilice el dispositivo que esté interactuando con las aplicaciones, es el kernel que utilizará. Este sub-sistema brinda las capacidades básicas de funcionamiento a las capas superiores tales como procesamiento y manejo de hilos, manejo de memoria, sistema de archivos, administración de redes y manejo de periféricos.
 
-### Sub-sistema de [[Driver]]
+### Sub-sistema de [Driver](../../Conceptos%20&%20Definiciones/Driver.md)
 
 En este sub-sistema se hace uso de Hardware Driver Foundation (HDF), a grandes rasgos, este es el gestor de drivers del sistema operativo y es la base sobre la cuál se permite tener un ecosistema abierto a diversos dispositivos con HarmonyOS. Permite el acceso unificado de dispositivos periféricos y brinda los cimientos para la gestión y desarrollo de drivers.
 
@@ -27,11 +27,11 @@ En este sub-sistema se hace uso de Hardware Driver Foundation (HDF), a grandes r
 Esta capa del sistema provee todas las capacidades necesarias para que Harmony OS funcione de manera adecuada, incluidas capacidades básicas para todos los dispositivos y capacidades enfocadas a ciertos dispositivos. A continuación se mencionarán los diferentes set de sub-sistemas que se encuentran en esta capa:
 
 - Set de sub-sistema de capacidades básicas del sistema
-	- [[Programador o Planificador Distribuido]]
-	- [[Gestor de datos distribuido]]
-	- [[Soft Bus Inteligente]]
-	- [[Intérprete Ark multi lenguaje]]
-	- [[Entrada Multimodal]]
+	- [Programador o Planificador Distribuido](../../Conceptos%20&%20Definiciones/Programador%20o%20Planificador%20Distribuido.md)
+	- [Gestor de datos distribuido](../../Conceptos%20&%20Definiciones/Gestor%20de%datos%20distribuido.md)
+	- [Soft Bus Inteligente](../../Conceptos%20&%20Definiciones/Soft%20Bus%20Inteligente.md)
+	- [Intérprete Ark multi lenguaje](../../Conceptos%20&%20Definiciones/Intérprete%20Ark%20multi%20lenguaje.md)
+	- [Entrada Multimodal](../../Conceptos%20&%20Definiciones/Entrada%20Multimodal.md)
 	- Gráficos
 	- Seguridad
 	- Inteligencia Artificial
@@ -41,8 +41,8 @@ Esta capa del sistema provee todas las capacidades necesarias para que Harmony O
 	- Eventos comunes y notificaciones
 	- Telefonía
 	- Multimedia
-	- [[DFX]]
-	- [[MSDP&DV]]
+	- [DFX](../../Conceptos%20&%20Definiciones/DFX.md)
+	- [MSDP&DV](../../Conceptos%20&%20Definiciones/MSDP&DV.md)
 	- Entre otros
 
 - Set de sub-sistema de servicios de software mejorados/especializados
@@ -68,7 +68,7 @@ Esta capa es aquella que nos brinda las capacidades para desarrollar aplicacione
 - C++
 - JavaScript
 
-A su vez, en el caso de Java y JavaScript, se tienen frameworks [[UI]], de igual manera, se brindan [[API]]s para el desarrollo de servicios de software y hardware en múltiples lenguajes, estas APIs varían dependiendo de los componentes que tenga cada dispositivo.
+A su vez, en el caso de Java y JavaScript, se tienen frameworks [UI](../../Conceptos%20&%20Definiciones/UI.md), de igual manera, se brindan [APIs](../../Conceptos%20&%20Definiciones/API.md) para el desarrollo de servicios de software y hardware en múltiples lenguajes, estas APIs varían dependiendo de los componentes que tenga cada dispositivo.
 
 
 ## Capa de aplicación
