@@ -2,7 +2,7 @@ Es importante comprender la arquitectura del sistema operativo ya que esto permi
 
 La arquitectura de Harmony OS se basa en capas, las cuales se mencionan a continuación en orden ascendente:
 
-1. Capa del [Kernel](../../../Conceptos%20&Definiciones/Kernel.md)
+1. Capa del [Kernel](../../Conceptos%20&Definiciones/Kernel.md)
 2. Capa del servicio del sistema
 3. Capa de [Framework](../../Conceptos%20&%20Definiciones/Framework.md)
 4. Capa de aplicación
