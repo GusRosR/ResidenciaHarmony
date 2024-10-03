@@ -99,7 +99,7 @@ Como primer paso, en DevEco Studio es necesario acceder a la sección de "File".
 
 Como se puede apreciar en la imagen, están seleccionadas ambas opciones, "Support HarmonyOS" sirve para que DevEco Studio gestione las APIs adecuadas así como las funcionalidades específicas para optimizar la experiencia del usuario con todos los dispositivos que utilizan HarmonyOS. Por otro lado, la segunda opción seleccionada, es para que DevEco Studio gestione los diferentes certificados y autenticaciones de manera automática. Desafortunadamente, para todos los desarrolladores que se encuentran fuera de la China Continental, esta opción no funciona de manera adecuada, por lo cuál es necesario deselecionar la opción que sirve para generar automáticamente los inicios de sesión. Al hacerlo, se nos desplegará la siguiente pantalla:
 
-![[SignInScreen2.png]]
+![Pantalla Inicio De Sesion Manual](../../Imagenes/SignInScreen2.png)
 
 
 
@@ -107,25 +107,25 @@ Como se puede apreciar en la imagen, están seleccionadas ambas opciones, "Suppo
 
 Ahora bien, en el caso de "Store File(\*.p12)" y "Certpath File(\*.cer)", se pueden crear desde DevEco Studio. Para ello, se debe cerrar la ventana actual y seleccionar el apartado "Build" en DevEco, de la lista de opciones, hay que seleccionar "Generate Key and CSR".
 
-![[GenerateKeys.png]]
+![Pantalla para Generar Credenciales](../../Imagenes/GenerateKeys.png)
 
 
 ###### Creación archivo .p12
 
 Como primer paso, hay que generar el archivo p12. Para ello, dado que no se cuenta con ningún archivo de este tipo generado con anterioridad, es necesario dar clic en "New". Al hacerlo, se desplegará la siguiente ventana:
 
-![[KeyFileGeneration.png]]
+![Crear el locker donde se almacena el archivo](../../Imagenes/KeyFileGeneration.png)
 
 A continuación, dar clic en el botón de la carpeta, a lo cuál se desplegará la siguiente ventana:
 
-![[KeyFileGeneration2.png]]
+![Asignar carpeta donde se guarda la llave](../../Imagenes/KeyFileGeneration2.png)
 
 Aquí únicamente hay que seleccionar la ubicación en la que se desea guardar el archivo así como el nombre que llevará el mismo, una vez que estos datos han sido completados, dar clic en Ok.
 Al hacerlo, nuevamente se mostrará la pantalla "Create Key Store", en la cuál, únicamente se debe establecer la contraseña con la que se desea proteger el archivo. Una vez llenados los tres campos, dar clic en Ok
 
 Ahora bien, al hacerlo, la pantalla que se desplegó al inicio se verá así:
 
-![[KeyFileGeneration3.png]]
+![Llenar los campos faltantes para el archivo .p12](../../Imagenes/KeyFileGeneration3.png)
 
 Ahora, únicamente resta terminar de llenar los campos. En el caso del Alias, es el nombre con el cuál la llave se identificará a sí misma en el archivo que se está generando. Simplemente se le asigna un nombre, es importante mencionar que este nombre se debe recordar ya que servirá para pasos posteriores. Finalmente, en la sección de "Certificate", se llena al menos un campo para que permita avanzar a la siguiente fase, en este caso, se llenará "Country Code" con las letras MX, que corresponden al código de país de México. Una vez realizados estos pasos, dar clic en Next.
 
@@ -133,11 +133,11 @@ Al hacerlo, se desplegará la siguiente ventana:
 
 ###### Creación de archivo .csr
 
-![[CRSFileGeneration.png]]
+![Llenado de campos para archivo .csr](../../Imagenes/CRSFileGeneration.png)
 
 En esta ventana, únicamente se debe dar clic en el icono de carpeta del apartado CSR file. Al hacerlo, se nos desplegará la siguiente pantalla, la cuál, es la misma que se desplegó al crear el archivo p12 con la única diferencia de que ahora se generará un archivo CSR.
 
-![[CRSFileGeneration2.png]]
+![Seleccionar carpeta para guardar archivo .csr](../../Imagenes/CRSFileGeneration2.png)
 
 Únicamente se selecciona la ubicación y nombre del archivo y se da clic en Ok. Al hacerlo, simplemente dar clic en el botón "Finish". De esta manera, se han creado dos de los cuatro archivos necesarios para conducir pruebas en un dispositivo real o físico.
 
@@ -146,21 +146,21 @@ Ahora bien, para el último archivo, es decir, el archivo "Profile File(\*.p7b)"
 
 Una vez iniciada la sesión en la cuenta de AppGallery Connect, la pantalla se verá así;
 
-![[AppGalleryConnectMainPage.png]]
+![Pantalla de inicio de AppGallery Connect](../../Imagenes/AppGalleryConnectMainPage.png)
 
 ###### Crear proyecto en AppGallery Connect
 
 Como primer paso, dar clic en "My Projects", al hacerlo se desplegará la siguiente pantalla:
 
-![[AppGalleryConnectProjectScreen.png]]
+![Pantalla inicial de Proyectos en AppGallery Connect](../../Imagenes/AppGalleryConnectProjectScreen.png)
 
 Si es la primera vez que se accede a esta sección es probable que únicamente aparezca la opción  "Add project". En este caso, dar clic en New Project. Al hacerlo se desplegará una pantalla en la que se solicita ingresar el nombre del proyecto. Se ingresa el nombre y al finalizar dar clic en Ok. Posteriormente se desplegará la siguiente pantalla:
 
-![[AppGalleryConnectProjectScreenAnalytics.png]]
+![Pantalla de solicitud de permisos en AppGallery Connect](../../Imagenes/AppGalleryConnectProjectScreenAnalytics.png)
 
 Para ahorrar tiempo, únicamente se desactiva esta opción y se da clic en Finish. Al hacerlo, se despliega la siguiente pantalla:
 
-![[AppGalleryConnectProjectScreenInfo.png]]
+![Pantalla de información del proyecto creado en AppGallery Connect](../../Imagenes/AppGalleryConnectProjectScreenInfo.png)
 
 Esta información es accesible en cualquier momento del proceso de desarrollo y puede ser útil para publicar la aplicación propiamente en AppGallery Connect.
 
@@ -170,13 +170,13 @@ Ahora bien, una vez concluido con este paso, se debe dar clic en el logo en la e
 
 Una vez en la pantalla principal, dar clic en la opción "Certificates, app IDs, and profiles". Al hacerlo, se despliega la siguiente pantalla:
 
-![[Tutorial Programacion HarmonyOS/Imagenes/AppGalleryConnectCertificateScreen.png]]
+![Pantalla inicial de certificados de AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreen.png)
 
 Nuevamente, si es la primera vez accediendo a esta sección, no nos saldrá nada en ninguno de los apartados. Seguidamente, el primer paso es crear un certificado para realizar pruebas con la aplicación que se está desarrollando. Este certificado permite que Huawei autorice compilar y correr el programa en diversas modalidades. 
 
 Primero, en la misma pantalla "Certificates", dar clic en "New Certificate". Al hacerlo, se desplegará la siguiente pantalla:
 
-![[AppGalleryConnectCertificateScreenDebugCert.png]]
+![Creación de certificado de aplicación en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenDebugCert.png)
 
 Lo único que se debe hacer es llenar los campos. Primero, se le asigna un nombre al certificado, posteriormente, seleccionar el tipo de certificado que se desea crear. Al dar clic en el campo se despliegan dos opciones:
 
@@ -189,11 +189,11 @@ En este caso, seleccionar la opción para debuguear. Finalmente, se solicita un 
 
 A continuación es necesario crear un ID para la aplicación que se registró en AppGallery Connect con la finalidad de que Huawei pueda supervisar la actividad de la aplicación para mantener un control de errores y mantener las tecnologías que se utilizan (si es el caso) actualizadas. Para hacerlo, es necesario dirigirse a la opción "App IDs" del lado izquierdo. Al hacerlo se desplegará la siguiente pantalla:
 
-![[AppGalleryConnectCertificateScreenAppID.png]]
+![Pantalla de identificadores de aplicación en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenAppID.png)
 
 Al no tener nada registrado, dar clic en "New". Luego de hacerlo, se despliega la siguiente pantalla.
 
-![[AppGalleryConnectCertificateScreenAppID2.png]]
+![Creación de identificador de aplicación en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenAppID2.png)
 
 Para llenar los campos se debe realizar de la siguiente manera:
 
@@ -204,11 +204,11 @@ Para llenar los campos se debe realizar de la siguiente manera:
 
 Una vez llenados todos los campos, dar click en "Next", una vez que se realice, se desplegará la siguiente pantalla:
 
-![[AppGalleryConnectCertificateScreenAppID3.png]]
+![Creación de identificador de aplicación en AppGallery Connect continuación](../../Imagenes/AppGalleryConnectCertificateScreenAppID3.png)
 
 En esta pantalla, únicamente se pregunta a qué proyecto de los que están creados se desea crear el identificador, en este caso se seleccionará el proyecto Prueba y al finalizar dar click en Ok. Al hacerlo, se mostrarán algunos de los kits de Huawei que se ofrecen para incluirlos dentro de la aplicación para brindar funcionalidades especiales para el proyecto como se muestra en la siguiente imagen. 
 
-![[AppGalleryConnectCertificateScreenAppID4.png]]
+![Selección de kits de aplicación en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenAppID4.png)
 
 En este caso no se utilizará ninguno, por lo que simplemente se da clic en Ok. Al hacerlo, nuestro proyecto quedará registrado en la pantalla de "App IDs". Una vez con este paso realizado, se procederá a mostrar el proceso para registrar el dispositivo en el que se realizarán las pruebas.
 
@@ -216,11 +216,11 @@ En este caso no se utilizará ninguno, por lo que simplemente se da clic en Ok. 
 
 Finalmente, es necesario crear el último archivo, con la extensión .p7b. Para hacerlo, primero es necesario dirigirse al apartado Devices en la lista de opciones del lado izquierdo. Al hacerlo, se desplegará la siguiente pantalla:
 
-![[AppGalleryConnectCertificateScreenDevice.png]]
+![Pantalla de dispositivos en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenDevice.png)
 
 Nuevamente, no existirá ningún dispositivo registrado al ser la primera vez que se entra a este apartado. A continuación, dar clic en "Add Device". Al hacerlo, se mostrará la siguiente pantalla:
 
-![[AppGalleryConnectCertificateScreenDevice2.png]]
+![Pantalla de dispositivos en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenDevice2.png)
 
 En el primer campo, simplemente escribir el nombre con el que se desea guardar el dispositivo. En el campo Type se desplegará una lista con diferentes opciones. A la fecha de realizado el presente tutorial, no se encuentra disponible la opción de Tablet. Por ello, se debe seleccionar "Mobile Phone". Finalmente, se solicita el UDID. Este es una serie de números y letras que identifican de manera única a cada dispositivo.
 
@@ -242,27 +242,27 @@ Teniendo este número a la mano es posible terminar la configuración, escribien
 
 Una vez realizado este paso, ya se puede generar al archivo con extensión .p7b. Para ello, es necesario dar click en la opción "Profiles" del lado izquierdo. Al hacerlo, se desplegará la siguiente pantalla:
 
-![[AppGalleryConnectCertificateScreenProfile.png]]
+![Pantalla de perfiles en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenProfile.png)
 
 En este caso, no habrá nada registrado como en los casos anteriores, así que inmediatamente se da clic en "Add". Al hacerlo, se presenta la siguiente pantalla:
 
-![[AppGalleryConnectCertificateScreenProfile2.png]]
+![Creación de perfil en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenProfile2.png)
 
 El primer campo, a diferencia de los campos anteriores, es necesario dar clic en la lista desplegable. Al hacerlo, se mostrarán las aplicaciones a las cuáles se les creó un App ID, es por ello que se realizó dicho paso previamente. Una vez seleccionada la aplicación a la que se le desea crear el certificado, se debe llenar el campo "Profile Name" que, en este caso, es el nombre con el que se podrá identificar el certificado. Posteriormente, se debe seleccionar si el certificado será para publicación de la aplicación (Release) o si será para realizar pruebas (Debug). En este caso, este último será el que se utilizará por ahora. Posteriormente, en el apartado "Certificate", al dar click en "Select". Al hacerlo, se mostrará la siguiente pantalla:
 
-![[AppGalleryConnectCertificateScreenProfile3.png]]
+![Selección de certificado para el perfil en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenProfile3.png)
 
 El certificado, es aquel que se creó en el primer paso de esta sección dentro de AppGallery Connect. En esta pantalla, simplemente se selecciona la aplicación para la cuál se hará el certificado y se da click en Ok.
 
 Posteriormente, para el campo "Device", nuevamente se da click en "Select" y se desplegará la siguiente pantalla:
 
-![[AppGalleryConnectCertificateScreenProfile4.png]]
+![Selección del dispositivo para el perfil en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenProfile4.png)
 
 En esta sección, lo que se está seleccionando es el dispositivo en el cuál se desean realizar las pruebas, es por este motivo que se realizó con anterioridad el registro del dispositivo en esta sección. Basta con seleccionar el dispositivo en el que se requieren hacer las pruebas y dar clic en Ok.
 
 La última opción o campo, es opcional seleccionarlo o no, esta opción es para cuando se requieren hacer pruebas con aplicaciones que sólo tendrán permisos para acceder a contactos o funciones básicas. Al dar clic en "Select" se muestra la siguiente pantalla:
 
-![[AppGalleryConnectCertificateScreenProfile5.png]]
+![Selección de permisos especiales para el perfil en AppGallery Connect](../../Imagenes/AppGalleryConnectCertificateScreenProfile5.png)
 
 En caso de requerir alguna de estas configuraciones, únicamente hay que seleccionarlas y dar click en Ok.
 
@@ -278,13 +278,13 @@ Una vez realizados todos los pasos anteriores, lo único que queda es llenar la 
 
 Como primer paso se debe abrir la aplicación DevEco Studio. Posteriormente dirigirse a "File" y a continuación seleccionar "Project Structure". Seguidamente dar clic en "Signing Configs". Como se puede apreciar, se nos dirige a una pestaña que ya se había mostrado en esta sección. Se deselecciona la opción "Automatically generate signature" y al hacerlo se muestra la siguiente pantalla:
 
-![[SignInScreen2.png]]
+![Pantalla de inicio de sesión](../../Imagenes/SignInScreen2.png)
 
 En el primer campo, se debe buscar la ubicación del archivo con extensión .p12 que se generó dentro de DevEco Studio en los primeros pasos de esta sección del tutorial. Una vez que encontrado, seleccionarlo y dar click en Ok. En el campo "Store Password" se debe poner la contraseña que se puso al momento de crear el archivo .p12. En el campo "Key Alias" se debe poner el alias que se escribió en la creación del archivo mencionado así como la contraseña que se asignó al alias de dicho archivo. En caso de tener dudas consultar la sección "Creación Archivo .p12". En el caso tanto de "Profile File" y "Certpath file" basta con buscar la ruta de los archivos que se descargaron de AppGallery Connect, cada uno con su respectiva extensión. Una vez llenos todos los campos, dar click en Apply y posteriormente dar click en "Apply" y finalmente dar clic en Ok. 
 
 Si el dispositivo está conectado a la laptop, es posible que en la parte superior derecha de la pantalla, se encuentre ya identificada la tableta por DevEco Studio como se muestra en la siguiente pantalla:
 
-![[DevEcoTabletIdentification.png]]
+![Apartado que indica que la tablet está conectada](../../Imagenes/DevEcoTabletIdentification.png)
 
 Cerca de los botones para ejecutar el programa se encuentra un recuadro que dice Huawei BTK-W09. Es posible que este identificador cambie de dispositivo en dispositivo, sin embargo, esto indica que la tablet está lista para usarse. 
 
@@ -292,7 +292,7 @@ Para correr el programa de prueba, basta con dar click en el botón verde al lad
 
 Es posible que la aplicación que se muestre se vea de la siguiente manera:
 
-![[DefaultAppScreenShot.jpg]]
+![Pantalla de aplicación por defecto de DevEco Studio](../../Imagenes/DefaultAppScreenShot.jpg)
 
 Como se puede apreciar en la imagen, no se muestra nada. Para enmendar esta situación, copiar y pegar el siguiente código en el archivo entry/src/main/ets/MainAbility/pages/index.ets
 
@@ -319,7 +319,7 @@ Como se puede apreciar en la imagen, no se muestra nada. Para enmendar esta situ
 
 Una vez que se ha realizado, apretar el botón cuadrado rojo que se encuentra en la parte superior derecha de DevEco Studio para terminar la ejecución del programa. Una vez que se detenga volver a correr el programa. Al hacerlo, el programa se verá de la siguiente manera:
 
-![[DefaultAppScreenShotClear.jpg]]
+![Pantalla del código modificado](../../Imagenes/DefaultAppScreenShotClear.jpg)
 
 De esta manera, se ha configurado el inicio de sesión y ahora es posible realizar pruebas desde un dispositivo físico para todos los programas que se deseen realizar.
 
