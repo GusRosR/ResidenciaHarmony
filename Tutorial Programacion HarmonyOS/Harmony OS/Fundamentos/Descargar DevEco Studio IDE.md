@@ -7,7 +7,44 @@ De manera resumida, DevEco Studio es un entorno de desarrollo impulsado por Inte
 
 Originalmente, para descargar este IDE, el link oficial de descarga se encuentra [aquí](https://developer.huawei.com/consumer/cn/download/), no obstante, el link a la fecha (12 de agosto de 2024) se encuentra caído para cualquiera de los sistemas operativos mostrados en la página. Por esta situación, el link de descarga del IDE se encuentra [aquí](https://winstall.app/apps/Huawei.DevEco), la instalación es por medio de la línea de comandos en Windows.
 
-## ¿Cómo lo configuro?
+## Abrir DevEco Studio por primera vez
+
+Al abrir la aplicación del IDE por primera vez, se mostrará el siguiente cuadro emergente, el cuál, cuestiona si se tiene un archivo de configuración previo (en el caso de que se haya instalado este IDE previamente). En este caso, se dejará seleccionada la casilla "Do not import settings"
+
+![Configuraciones previas o configuración desde cero](../../Imagenes/NotImportConfigSettings.png)
+
+Al hacerlo, se desplegará la siguiente ventana, en la cual, se hace la pregunta de si tanto NodeJS como OpenHarmony Project ya están instalados y se desea buscar la carpeta en la cuál se tienen descargados o si bien, se desean instalar desde cero.
+
+En este caso, se selecciona para ambos la casilla "Install". Una vez esto se ha marcado, se le da click al icono de carpeta que se encuentra en cada uno de los campos en el caso de que se requiera escoger otra carpeta para la instalación de dichos componentes. Una vez que las rutas de instalación han sido adaptadas a las propias necesidades o bien, no se quieran instalar en la ruta que señala por defecto, dar click en Next.
+
+![Instalación de NodeJS y OpenHarmony Project](../../Imagenes/NodeJSOHPInstall.png)
+
+A continuación, se despliega la siguiente pantalla, en la cuál, en el primer campo, se muestra la ruta en la que se instalará el SDK para desarrollar con HarmonyOS, así como el icono de la carpeta que indica la posibilidad de cambiar la ruta en la cuál este puede ser instalado.
+
+![Instalación fallida de HarmonyOS SDK](../../Imagenes/SDKDownloadFail.png)
+A pesar de esto, se nos muestra un mensaje indicando que no fue posible obtener información del SDK y por ende, no será instalado. En la parte inferior de la pantalla se muestra que la conexión a internet ha fallado y que es necesario checar las configuraciones de red o las del proxy. Este problema hará que no sea posible probar las aplicaciones, no obstante, este problema se ha descrito y solucionado en el apartado [Posibles errores y soluciones](../Posibles%20errores%20y%20soluciones/HarmonyOSSDKFail), favor de consultar dicha sección para solucionar este problema posteriormente. Por ahora, dar click en Next.
+
+Al hacerlo, se muestra la siguiente pantalla, la cuál muestra el acuerdo de licencia del usuario, basta con seleccionar la casilla "Accept" y dar clic en Next. 
+
+![Acuerdo de Licencia para NodeJS y OHP](../../Imagenes/LicenceAgreementOH.png)
+
+Posteriormente se mostrará una pantalla en la cuál se muestra un resumen de los diversos componentes que se instalarán así como sus ubicaciones de instalación, únicamente hay que dar click en Ok para que comience la instalación.
+
+Ahora bien, como último comentario, es muy probable que al final de la instalación la pantalla se vea de la siguiente manera:
+
+![Pantalla final de instalación de componentes](../../Imagenes/NodeJSSDKFailInstall.png)
+
+No obstante, como ya se ha mencionado, este problema será arreglado posteriormente, por ahora, dar click en Finish. Al hacerlo, es posible que DevEco Studio realice un diagnóstico de los componentes del sistema tanto en hardware como en software como se muestra a continuación:
+
+![Imagen del diagnóstico hecho por DevEco Studio](../../Imagenes/DevEcoSystemDiagnose.png)
+
+Una vez que se termine dicho diagnóstico, se puede cerrar la ventana sin ningún contratiempo y entonces se mostrará ahora sí la pantalla de creación de proyectos de DevEco Studio como se muestra en la siguiente imagen:
+
+![Pantalla de creación de proyectos de DevEco Studio](../../Imagenes/DevEcoProjectCreationMainScreen.png)
+
+
+
+## Configuraciones Opcionales
 
 Una vez que ha sido instalado el DevEco Studio, se pueden realizar las siguientes configuraciones opcionales en el caso de que las necesidades de desarrollo así lo indiquen:
 
@@ -61,19 +98,38 @@ Una vez hechas las configuraciones necesarias, es necesario descargar e instalar
 		npm info express
 
 - Si la información que se despliega después de ejecutar el comando muestra palabras clave, integridad, dependencias, entre otros, significa que el proxy ha sido establecido con éxito.
-
-### Descarga del SDK de HarmonyOS
-
-Si es la primera vez que se utiliza DevEco Studio, seleccionar la opción "**Do not import settings** o No importar configuraciones" y dar clic en Ok. posteriormente, seguir las instrucciones del asistente para establecer el registro npm. Este IDE se ha preconfigurado con el registro correspondiente, dar clic en Start using DevEco Studio o Empezar a usar DevEco Studio.
-
-Siguiendo el asistente de configuración, se nos guiará para instalar el SDK en el directorio o carpeta Users o Usuarios, es posible especificar una ubicación diferente, únicamente hay que cerciorarse de que no contengan caracteres chinos.
-
-Por defecto, se descargan las últimas versiones del Java SDK, JS SDK, Previewer y Toolchains. Cuando al acuerdo de licencia aparezca únicamente se le da clic en aceptar. Posterior a la descarga del SDK, dar clic en Terminar o Finish para acceder a la página de bienvenida de DevEco Studio.
-
+- 
 ## Crear un proyecto
 
-Luego de que se abra la pantalla de bienvenida, se mostrarán tres opciones del lado izquierdo; Crear proyecto (**Create Project**), Abrir proyecto (**Open Project**) y Obtener de VCS (**Get from VCS**), de estas opciones se selecciona la opción de "**Create Project**". Al hacerlo se nos abrirá una ventana con diversas plantillas para escoger, estas plantillas incluyen lenguajes como Java, C++ y JS.
-Posteriormente se debe seguir el asistente de configuración del proyecto en el que es posible elegir entre servicio o aplicación, el nombre del paquete, el lugar en el que se guardará el proyecto, la versión compatible de API, el tipo de dispositivo para el que se va a desarrollar y la opción de mostrar en el Centro de Servicio.
+Como se ha mostrado con anterioridad, esta es la pantalla para realizar la creación de proyectos en este IDE:
+![Pantalla de creación de proyectos de DevEco Studio](../../Imagenes/DevEcoProjectCreationMainScreen.png)
+
+Las opciones que se presentan son; "Create Project" que permite crear proyectos desde cero utilizando plantillas vacías o bien, plantillas con cierta funcionalidad, métodos y características predefinidas, "Open Project" que permite abrir un proyecto de alguna carpeta que se haya creado con anterioridad, y finalmente "Get from VCS (Version Control System)", esta opción hace referencia a obtener un proyecto desde un repositorio. Esta opción puede ser muy útil cuando se requiera continuar o bien, empezar a desarrollar un módulo o servicio de un proyecto Open Source o bien, proyectos que se encuentran en otro dispositivo.
+
+En este caso, se seleccionará la opción "Create Project" para empezar un proyecto desde cero. Al hacerlo, se desplegará la siguiente pantalla:
+
+![Selección de plantillas de proyectos](../../Imagenes/DevEcoProjectCreationFromScratch.png)
+
+Se muestran del lado izquierdo dos opciones. "Application" y "Atomic Service", en el caso de la primera opción, que es el apartado que viene seleccionado por defecto, como se aprecia en la imagen, se presentan diversas plantillas dependiendo de las necesidades del proyecto. Ahora bien, en el caso de la opción de Servicio Atómico, la principal diferencia que tiene con la aplicación es que esta última, cuenta con una interfaz gráfica de usuario y los servicios no. Ahora bien, para continuar con el proceso de creación del proyecto, dejar seleccionada la opción de "Empty Ability" y dar click en Next. Una vez hecho, se mostrará la siguiente pantalla:
+
+![Configuraciones del proyecto](../../Imagenes/DevEcoProjectCreationFromScratchSettings.png)
+
+En el primer campo, como su nombre lo indica, es simplemente el nombre con el que se identificará el proyecto en DevEco Studio. Ahora, en el caso de "Bundle name", es importante seleccionar un nombre con el siguiente formato: nombreDeApp.huawei.(com/net/org/etc). Este nombre sólo debe contener de preferencia caracteres alfabéticos o números y debe terminar, como se puso en el ejemplo, en .com, .net, .org, o cualquier terminación válida. Es importante guardar este nombre dado que será útil posteriormente en la creación de los certificados y que no haya una incompatibilidad de nombres. Posteriormente, se selecciona la ubicación en la que se guardará el proyecto. Ahora bien, en el caso de Compile SDK, se debe realizar una modificación. A la fecha de realizado este tutorial (Octubre de 2024), la Huawei MatePad 11.5, no puede correr aplicaciones con el SDK API versión 9, la versión máxima que puede compilar es API versión 8, por este motivo, se da click en el campo "Compile SDK" y se selecciona API 8. Al hacerlo, se modifican ligeramente las opciones que se presentan posteriormente como se muestra en la siguiente pantalla.
+
+![Opciones para proyecto con API 8](../../Imagenes/DevEcoProjectCreationFromScratchSettingsAPI8.png)
+
+Como se puede apreciar, en el campo "Model" únicamente se deja la opción FA, es decir, Feature Ability, la cual se ha comentado antes en [Arquitectura de Harmony OS](./Fundamentos/Arquitectura%20de%20Harmony%20OS.md), en el apartado "Capa de Aplicación". El campo "Enable Super Visual" se activa cuando se desea realizar modificaciones en el código de bajo nivel de la plantilla seleccionada. Por el momento, se dejará sin activar. En el caso del apartado "Language" se presentan dos opciones "ArkTS" y "JS". El primero, es un lenguaje de programación desarrollado por Huawei. Es el lenguaje de programación preferido por defecto para desarrollar en HarmonyOS, está basado en TypeScript, por lo cuál, la gran mayoría de las funcionalidades y características de dicho lenguaje están contenidas en el lenguaje Ark. Ahora bien, la segunda opción es la abreviación para JavaScript, DevEco Studio brinda la posibilidad de utilizar este lenguaje para desarrollar las aplicaciones si esa es la preferencia del usuario. En el campo "Compatible SDK", dado que se está seleccionando una versión anterior de HarmonyOS SDK, no es posible cambiar la versión compatible con este kit de desarrollo. Finalmente, en el campo de "Device type" aparece seleccionado "Phone" o teléfono, de momento, se mantienen así todas las configuraciones y se da click en Finish.
+
+Al hacerlo, se mostrará la siguiente pantalla.
+
+![Default Project Load Screen](../../Imagenes/DevEcoDefaultProjectScreen.png)
+
+Esta es la pantalla inicial del proyecto. Es posible, que después de un momento se abra una terminal y comience a descargarse contenido en la terminal como se muestra en la siguiente pantalla.
+
+![Terminal de DevEco Studio descargando contenido](../../Imagenes/DevEcoTerminalDownloadingContent.png)
+
+Con esto se concluye la instalación y configuración de DevEco Studio. Si bien es posible que se muestre un mensaje de error, para no alargar más esta sección, este será manejado en la sección [Manejo de errores](../Posibles%20errores%20y%20soluciones/Indice%20errores.md)
+
 
 ## Probar las aplicaciones en emuladores o dispositivos reales remotos
 
