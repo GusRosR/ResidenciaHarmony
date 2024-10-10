@@ -3,4 +3,5 @@ A continuación, se presenta una lista de diversos errores que pueden presentars
 - DevEco Studio
 	- [La página oficial de Huawei no permite descargar DevEco](LinkDescargaDES.md)
 	- [DevEco Studio no permite descargar HarmonyOS SDK](HarmonyOSSDKFail.md)
+	- [El tipo de dispositivo objetivo no concuerda con el tipo de dispositivo en los archivos de configuración](Incompatibilidad%20De%20Dispositivos.md)
 	- 
