@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "0000001B536E542FD4626A0D19E3F828D14A61D3477B9B4CD2EDF32081E726910D001C25A13889A1FC8DD6",
+          "certpath": "C:/ResidenciaProfesional/SierraScanner2/Certs/SierraScanner.cer",
+          "keyAlias": "SeisStoreKey",
+          "keyPassword": "0000001B77BA895FDFC45D721134FBF841489843A2CAA25DC166200973227C5B5EC5FAEF55E23E2BF33629",
+          "profile": "C:/ResidenciaProfesional/SierraScanner2/Certs/SierraScannerSeis.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/ResidenciaProfesional/SierraScanner2/Certs/SeisStore.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 8,
+    "compatibleSdkVersion": 8,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./mainGUI",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

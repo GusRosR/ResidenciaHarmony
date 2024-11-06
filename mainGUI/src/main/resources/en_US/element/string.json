@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "PortScannerAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "PortScannerAbility_label",
+      "value": "label"
+    }
+  ]
+}
