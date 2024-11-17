@@ -11,23 +11,6 @@ import fileio from '@ohos.fileio';
    * */
 
 struct ReportGenerator { //Struct se utiliza en ArkTS para referirse a elementos que estrictamente tienen que ver con componentes de la interfaz gráfica  Index es básicamente el nombre que se le pone a dicho componente
-
-  selectFile() {
-    let types = []; // Empty types array could allow directory selection, depending on system behavior
-    document.choose(types).then((uri) => {
-      // Validate that the selected path is a directory
-      if (this.isDirectory(uri)) {
-        this.saveLocationBtnText = "Directory selected: " + uri; // Update button text with directory
-        console.info("Selected directory:", uri);
-      } else {
-        console.error("Selected item is not a directory. Please select a directory.");
-        this.saveLocationBtnText = "Please select a directory";
-      }
-    }).catch((err) => {
-      console.error("Error selecting directory:", err);
-    });
-  }
-
   // Mock directory validation function (replace with actual implementation if needed)
   isDirectory(uri: string): boolean {
     // Implement logic to verify if `uri` is a directory path
@@ -37,12 +20,12 @@ struct ReportGenerator { //Struct se utiliza en ArkTS para referirse a elementos
   titleMessage: string = 'Generar Reportes' //En este caso, message es el nombre de la variable que se utilizará, string es el tipo de dato y posteriormente su valor
   homeButtonMessage: string = 'Volver al inicio'
   radioBtnLbl: string = 'Seleccione el formato'
+  fileNamePlaceholder: string = 'Escriba el nombre del archivo'
   radioBtnPdf: string = 'PDF'
   radioBtnWord: string = 'Word'
   radioBtnCSV: string = 'CSV'
   radioBtnGroup: string = 'documentFormat'
-  saveLocationLbl: string = 'Seleccione ubicación'
-  saveLocationBtnText: string = 'Guardar en...'
+  saveLocationLbl: string = 'Indique el nombre del archivo'
   mainBtnText: string = 'Generar'
   homeURL: string = 'pages/index'
   backgroundColor: string = '#0d1321'
@@ -124,19 +107,11 @@ struct ReportGenerator { //Struct se utiliza en ArkTS para referirse a elementos
       }.margin({ left: '20%' })
 
       GridItem() {
-        Button() { //Este método crea un botón
-          Text(this.saveLocationBtnText)
-            .fontSize(20)
-            .fontColor(this.textColor)
-            .fontWeight(FontWeight.Bold)
-            .textAlign(TextAlign.Center)
-            .padding('10%')
-        }
-        .type(ButtonType.Capsule) //Se establece el tipo de botón que se usará
-        .backgroundColor(this.buttonColor)
-        .height('40%')
-        .margin(5)
-        .onClick(this.selectFile)
+        TextInput({placeholder:this.fileNamePlaceholder})
+          .width('45%')
+          .height(40)
+          .fontSize(20)
+          .fontColor(this.textColor)
       } .columnStart(2) .columnEnd(4)
 
       GridItem(){
