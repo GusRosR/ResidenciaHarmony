@@ -9,6 +9,11 @@
   },
   "deviceConfig": {},
   "module": {
+    "reqPermissions": [
+      {
+        "name" : "ohos.permission.INTERNET"
+      }
+    ],
     "mainAbility": ".MainAbility",
     "deviceType": [
       "tablet"
@@ -57,7 +62,9 @@
           "pages/portScanner",
           "pages/hostDiscover",
           "pages/vulnAnalizer",
-          "pages/reportGenerator"
+          "pages/reportGenerator",
+          "pages/logic/portScan"
+
         ],
         "name": ".MainAbility",
         "window": {
