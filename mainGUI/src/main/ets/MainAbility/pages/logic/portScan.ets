@@ -207,6 +207,19 @@ struct PortScan {
            .margin(10)
            .fontColor(this.backgroundColor)
 
+         Text(`Lista de puertos abiertos: ${[...this.puertosAbiertos].sort((a, b) => a - b).join(', ')}`) /* En el caso del arreglo de
+           puertos abiertos debemos recordar que es muy probable que se encuentren en desorden por la naturaleza asíncrona
+           del método logicaEscaneo y escanearPuertos. Por ello, es necesario ordenar el arreglo en orden ascendente para
+           hacer que el usuario tenga una mejor experiencia al utilizar el programa. Los tres puntos previo al this.puertosAbiertos
+           sirven para crear una copia del arreglo luego de su ejecución, esto es para que el arreglo original no se modifique
+           y sólo se ordene a nivel de presentación o estética. El método sort es aquel que realiza el ordenamiento del arreglo.
+           Este método recibe dos parámetros, el primero son los dos números representados de manera algebraica, que en este
+           caso son a y b, pero pueden ser cualquier otras letras. Luego del =>, se muestra la regla que se seguirá para comparar.
+           En este caso a - b indica que se debe ordenar de manera ascendente */
+           .fontSize(20)
+           .margin(5)
+           .fontColor(this.textColor)
+
         if (this.isLoading){ /*En esta condición checamos si la bandera de escaneo en progreso está encendida, en el caso de que
         esté en verdadero, se realiza lo siguiente*/
           LoadingProgress() //Este componente muestra una animación de carga
@@ -216,24 +229,15 @@ struct PortScan {
         }
         else if (!this.isLoading && this.puertosAbiertos.length > 0){ /* En esta condición se checa si
          la bandera de carga está en falso y si el arreglo con los puertos abiertos contiene algo*/
-          Text(`Puertos abiertos: ${[...this.puertosAbiertos].sort((a, b) => a - b).join(', ')}`) /* En el caso del arreglo de
-           puertos abiertos debemos recordar que es muy probable que se encuentren en desorden por la naturaleza asíncrona
-           del método logicaEscaneo y escanearPuertos. Por ello, es necesario ordenar el arreglo en orden ascendente para
-           hacer que el usuario tenga una mejor experiencia al utilizar el programa. Los tres puntos previo al this.puertosAbiertos
-           sirven para crear una copia del arreglo luego de su ejecución, esto es para que el arreglo original no se modifique
-           y sólo se ordene a nivel de presentación o estética. El método sort es aquel que realiza el ordenamiento del arreglo.
-           Este método recibe dos parámetros, el primero son los dos números representados de manera algebraica, que en este
-           caso son a y b, pero pueden ser cualquier otras letras. Luego del =>, se muestra la regla que se seguirá para comparar.
-           En este caso a - b indica que se debe ordenar de manera ascendente */
-            .fontSize(20)
-            .margin(5)
-            .fontColor(this.textColor)
-
           Text(`Escaneo Completo`)
             .fontSize(20)
             .margin(10)
             .fontColor(this.textColor)
         }
+      Text(`Cantidad de puertos abiertos: ${this.puertosAbiertos.length} de ${(parseInt(this.puertoF)-parseInt(this.puertoI))+1} puertos escaneados`)
+        .fontSize(20)
+        .margin(10)
+        .fontColor(this.textColor)
     }
     .height('100%')
     .width('100%')

@@ -270,10 +270,10 @@ export struct PortScanner {  //Struct se utiliza en ArkTS para referirse a eleme
 
       GridItem(){
         Select([
-          {value: '1'},
-          {value:'2'},
-          {value:'3'},
-          {value:'4'}])
+          {value: '1 (Rápido)'},
+          {value:'2 (Medio)'},
+          {value:'3 (Lento)'},
+          {value:'4 (Muy Lento)'}])
           .selected(0)
           .font({size:20, weight:FontWeight.Lighter})
           .fontColor(this.textColor)
